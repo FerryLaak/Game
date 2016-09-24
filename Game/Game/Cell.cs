@@ -7,18 +7,8 @@ using System.Drawing;
 
 namespace Game
 {
-    class Cell
+    public class Cell
     {
-        Point position;
-        Size size;
 
-        public Cell(Point position, Size size)
-        {
-
-        }
-        public void Draw(Graphics g)
-        {
-
-        }
     }
 }

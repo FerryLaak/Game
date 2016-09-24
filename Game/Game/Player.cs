@@ -7,22 +7,18 @@ using System.Drawing;
 
 namespace Game
 {
-    class Player
+    class Player: Character
     {
-        Point position;
-        int hitpoints;
-
-        public Player()
+        private static Pen pen = new Pen(Color.Black, 2);
+        public Player(Cell position, int hitpoint): base(position, hitpoint)
         {
 
         }
-        public void Update()
-        {
 
-        }
-        public void Draw(Graphics g)
+        public override void Draw(Graphics g)
         {
-
+            g.DrawEllipse(pen, 5, 5, 3, 3);
         }
+
     }
 }
